@@ -12,27 +12,27 @@
 - [x] It handles unicode characters(eg. the `ü` in Süsse or `ß` in Straße). ()
 ## How to run the file
 ### default test file
-I put the following test file in same folder
-Alices-Adventures-in-Wonderland-by-Lewis-Carroll.txt: novel 54KB
-Anne-of-Green-Gables.txt: 548
-moby_dick.txt: 1228kb
-unicode_test.txt: 1090 , contain unicode characters
-unicode_mix_normal_word.txt: 1kb, hybrid normal and unicode
-I copy around 50 moby_dick.txt in the large_test and I put the file in the large_test on the docker too
+I put the following test file in same folder\n
+Alices-Adventures-in-Wonderland-by-Lewis-Carroll.txt: novel 54KB\n
+Anne-of-Green-Gables.txt: 548\n
+moby_dick.txt: 1228kb\n
+unicode_test.txt: 1090 , contain unicode characters\n
+unicode_mix_normal_word.txt: 1kb, hybrid normal and unicode\n
+I copy around 50 moby_dick.txt in the large_test and I put the file in the large_test on the docker too\n
 ### Launch docker:
 In the terminal:
-$docker pull honkuro/new_relic:v2
-$docker run -t -i --rm honkuro/new_relic:v2 bash
-Then, you can use following code to run my code
+$docker pull honkuro/new_relic:v2\n
+$docker run -t -i --rm honkuro/new_relic:v2 bash\n
+Then, you can use following code to run my code\n
 ### in the bash terminal
-1. python ./solution.py file1.txt file2.txt ...etc
-for instance, python ./solution.py ./moby_dick.txt
+1. python ./solution.py file1.txt file2.txt ...etc\n
+for instance, python ./solution.py ./moby_dick.txt\n
 In this case, solution.py will treat the filename as input do the word count. I have two testcase one is moby_dick.txt, and other is unicode_test which contaion the unicode case
-2. cat file | python ./solution.py
-In this case, solution.py will readline from stdin
-there are two cases:
-single: cat ./moby_dick.txt | python ./solution.py
-Large_test: cat ./app/src/*.txt| python ./solution.py
+2. cat file | python ./solution.py\n
+In this case, solution.py will readline from stdin\n
+there are two cases:\n
+single: cat ./moby_dick.txt | python ./solution.py\n
+Large_test: cat ./app/src/*.txt| python ./solution.py\n
 
 ## What you would do next, given more time (if anything)?
 If I am given more time, I will try to:
