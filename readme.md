@@ -26,14 +26,13 @@ In the terminal: \
 Then, you can use following code to run my code 
 ### in the bash terminal
 1. python ./solution.py file1.txt file2.txt ...etc \
-for instance, \
   python ./solution.py ./moby_dick.txt
 In this case, solution.py will treat the filename as input do the word count. I have two testcase one is moby_dick.txt, and other is unicode_test which contaion the unicode case
 2. cat file | python ./solution.py
 In this case, solution.py will readline from stdin
-there are two cases:
-  single: cat ./moby_dick.txt | python ./solution.py
-  Large_test: cat ./app/src/*.txt| python ./solution.py
+there are two cases: \
+  single: cat ./moby_dick.txt | python ./solution.py \
+  Large_test: cat ./app/src/*.txt| python ./solution.py \
 
 ## What you would do next, given more time (if anything)?
 If I am given more time, I will try to:
